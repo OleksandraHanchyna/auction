@@ -1,0 +1,90 @@
+.view {
+  max-width: 850px;
+  margin: 30px auto;
+
+  &--title {
+    font-size: 28px;
+  }
+
+  &--carousel {
+    background: #364d79;
+    height: 350px;
+
+    &-img {
+      object-fit: cover;
+      width: 250px;
+      height: 250px;
+      margin: 20px auto;
+    }
+    //img, video {
+    //  box-sizing: border-box;
+    //  height: 400px;
+    //  width: 400px;
+    //  margin: 10px auto;
+    //  object-fit: cover;
+    //}
+  }
+
+  &--content {
+    display: flex;
+    align-items: flex-end;
+    //justify-content: space-between;
+    //position: relative;
+    //min-height: 300px;
+    //width: 100%;
+    //column-count: 2;
+    //column-gap: 1em;
+    margin-bottom: 15px;
+
+    &--info {
+      flex: 1 1 auto;
+      //align-self: center;
+
+      :last-child:is( div ) {
+        margin-bottom: 0;
+      }
+
+      .ant-form-item {
+        margin: 5px 0;
+      }
+
+      label {
+        font-weight: bold;
+        font-size: medium;
+      }
+    }
+
+    &--actions {
+      flex: 2 1 auto;
+      margin-left: 30px;
+      //margin-bottom: auto;
+      //position: absolute;
+      //bottom: 0;
+      //right: 0;
+      //width: 70%;
+
+      ul {
+        min-height: 186px;
+        max-height: 186px;
+        overflow: hidden auto;
+
+        :nth-child(2n+1):is(li) {
+          background: rgba(208, 208, 208, 0.9);
+        }
+      }
+
+      button {
+        margin: 0;
+
+        :hover {
+          transform: scale(1.5);
+          transition: transform 150ms ease-in-out;
+        }
+      }
+    }
+
+    ::selection {
+      display: none;
+    }
+  }
+}

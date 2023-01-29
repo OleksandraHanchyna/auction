@@ -1,0 +1,30 @@
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin: 2px 0;
+
+  &--avatar {
+    margin-right: 5px;
+
+    ::before {
+      content: '*';
+      font-weight: bold;
+      color: #364d79;
+    }
+  }
+
+  &--date, &--rate {
+    margin: 0 10px;
+  }
+
+  &-block {
+    display: flex;
+    align-items: center;
+  }
+}
+
+

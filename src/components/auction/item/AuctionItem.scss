@@ -1,0 +1,42 @@
+.auction {
+  &--btn {
+    .ant-form-item-control-input-content{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+    }
+  }
+
+  &--step-rate {
+    #stepRate {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .ant-slider {
+        width: 350px;
+      }
+    }
+  }
+
+  .ant-upload-list.ant-upload-list-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+

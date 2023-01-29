@@ -1,0 +1,44 @@
+.profile {
+  background-color: white;
+  margin: 20px 15px;
+  padding: 0 10px;
+  min-width: 500px;
+
+  //&__image {
+  //  &--icon {}
+  //}
+}
+
+.ant-form.ant-form-vertical.profile .ant-form-item .ant-row.ant-form-item-row,
+.ant-form.ant-form-vertical.profile .ant-form-item .ant-col.ant-form-item-control .ant-picker {
+  margin-top: 10px;
+}
+
+.ant-form.ant-form-vertical.profile .ant-form-item .ant-col.ant-form-item-control .ant-picker {
+  width: 100%;
+}
+
+
+.profile .profile__image--icon {
+  width: 100px;
+  height: 100px;
+}
+
+.ant-form-item-control-input .ant-form-item-control-input-content .ant-upload-list.ant-upload-list-picture-card .ant-upload {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ant-upload .ant-upload-select.ant-image,
+.ant-image-img .profile-image,
+.ant-image-mask {
+  width: 100px;
+  border-radius: 50%;
+}
+.ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload.ant-upload-select {
+  border-radius: 50% !important;
+}
+
+.ant-form-item-control-input .ant-form-item-control-input-content .ant-btn.ant-btn-block.profile-save-btn {
+  margin: 10px auto;
+}

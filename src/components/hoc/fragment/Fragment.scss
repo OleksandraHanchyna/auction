@@ -1,0 +1,68 @@
+.layout {
+  width: 100%;
+
+  &--header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &--home--btn {
+      color: white !important;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &--avatar--icn {
+      padding-right: 35px;
+    }
+  }
+
+  &--content {
+    margin: 30px auto;
+  }
+}
+
+.ant-form {
+  padding: 0 15px;
+  min-width: 500px;
+  max-width: 500px;
+  background-color: white;
+  border: 2px solid #364d79;
+  box-shadow: 1px 3px 3px #879fc2;
+  border-radius: 15px;
+}
+
+.ant-form .ant-form-item .ant-col.ant-form-item-label {
+  padding: 0;
+}
+
+.ant-layout-content .ant-form-item, .ant-form-item {
+  margin: 7px 0 18px 0;
+}
+
+.ant-form-item-control-input .ant-form-item-control-input-content .ant-btn.ant-btn-primary.ant-btn-block {
+  background: #364d79;
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+.ant-form-item-control-input-content .ant-input-number-group-wrapper,
+.ant-form-item-control-input-content .ant-picker {
+  width: 100%;
+}
+
+.ant-form-item-explain-error {
+  position: absolute;
+  top: 32px;
+  padding: 0 5px;
+  text-align: start;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.agreement .ant-form-item-explain-error {
+  width: 100%;
+  text-align: center;
+}

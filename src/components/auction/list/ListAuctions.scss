@@ -1,0 +1,79 @@
+@use '../../../../style/screen';
+
+.auctions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  &--sort {
+    &--create-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    &-block {
+      display: flex;
+      justify-content: flex-start;
+      width: 60%;
+    }
+  }
+}
+
+.auctions--card .ant-spin-nested-loading .ant-spin-container .ant-list-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .auction-card {
+    box-sizing: border-box;
+    padding: 10px;
+    border-block-end: none;
+  }
+}
+
+$five-cards: 5;
+@media screen {
+  .auctions--card .ant-spin-nested-loading .ant-spin-container .ant-list-items .ant-list-item {
+    width: calc(100%/$five-cards);
+  }
+}
+
+$four-cards: 4;
+@media screen and (max-width: screen.$md) {
+  .auctions--card .ant-spin-nested-loading .ant-spin-container .ant-list-items .ant-list-item {
+    width: calc(100%/$four-cards);
+  }
+}
+
+$three-cards: 3;
+@media screen and (max-width: screen.$sm) {
+  .auctions--card .ant-spin-nested-loading .ant-spin-container .ant-list-items .ant-list-item {
+    width: calc(100%/$three-cards);
+  }
+}
+
+$two-cards: 2;
+@media screen and (max-width: screen.$xs) {
+  .auctions--card .ant-spin-nested-loading .ant-spin-container .ant-list-items .ant-list-item {
+    width: calc(100%/$two-cards);
+  }
+}
+
+$one-card: 1;
+@media screen and (max-width: screen.$xxs) {
+  .auctions--card .ant-spin-nested-loading .ant-spin-container .ant-list-items .ant-list-item {
+    width: calc(100%/$one-card);
+  }
+}
+
+
+
+
+
+
